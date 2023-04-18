@@ -7,7 +7,7 @@ const ItemSchema = new mongoose.Schema({
     },
 
     quantity:{
-        type:"Number",
+        type:Number,
         required:true
     }
 })
