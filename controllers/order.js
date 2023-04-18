@@ -44,9 +44,8 @@ const createOrder = async (req, res) =>{
     })
 
     await cart.findOneAndDelete({
-        _id: cart._id,
+        _id: cart._id})
         res.status(statusCodes.OK).json({order, status:"success"})
-    })
 }
 
 const getOrders = async (req, res) =>{
